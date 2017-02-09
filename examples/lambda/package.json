@@ -1,0 +1,24 @@
+{
+  "private": true,
+  "files": [
+    "main",
+    ".env"
+  ],
+  "scripts": {
+    "build": "async-to-gen index.js > build.js",
+    "provision": "claudia create --region us-east-1 --api-module build--policies policies/",
+    "test": "claudia test-lambda",
+    "deploy": "claudia update",
+    "destroy": "claudia destroy"
+  },
+  "main": "build.js",
+  "devDependencies": {
+    "async-to-gen": "^1.3.2",
+    "claudia": "^2.6.0"
+  },
+  "dependencies": {
+    "claudia-api-builder": "^2.4.0",
+    "node-uuid": "^1.4.7",
+    "s3-signatory": "latest"
+  }
+}
