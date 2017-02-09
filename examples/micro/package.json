@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "micro",
+    "deploy": "now -E"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.10.0",
+    "dotenv-safe": "^4.0.3",
+    "micro": "^7.0.3",
+    "s3-signatory": "latest"
+  },
+  "devDependencies": {
+    "now": "^4.2.2"
+  }
+}

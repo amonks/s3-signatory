@@ -1,0 +1,27 @@
+{
+  "name": "s3-signatory",
+  "version": "0.0.0",
+  "author": "Andrew J. Monks <a@monks.co>",
+  "license": "ISC",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "babel src -d lib"
+  },
+  "browser": "lib/browser.js",
+  "main": "lib/index.js",
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-plugin-transform-runtime": "^6.22.0",
+    "babel-preset-latest": "^6.22.0",
+    "babel-preset-stage-1": "^6.22.0"
+  },
+  "dependencies": {
+    "axios": "^0.15.3",
+    "babel-runtime": "^6.22.0",
+    "node-uuid": "^1.4.7",
+    "transform-runtime": "^0.0.0"
+  },
+  "repository": "git@github.com:theuprising/s3-signatory.git"
+}
