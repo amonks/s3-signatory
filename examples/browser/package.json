@@ -8,5 +8,8 @@
   },
   "devDependencies": {
     "next": "^1.2.3"
+  },
+  "dependencies": {
+    "s3-signatory": "latest"
   }
 }
